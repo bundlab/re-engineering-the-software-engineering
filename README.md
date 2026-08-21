@@ -2,10 +2,10 @@
 
 Re-engineering the Software Engineering — a practical, research-driven playbook for modernizing how teams design, deliver, and operate software: automation, observability, platform thinking, and human-centered practices.
 
-[![CI](https://img.shields.io/badge/ci-pipeline-lightgrey.svg)](#)
+[![CI](https://img.shields.io/badge/ci-pipeline-lightgrey.svg)](../../actions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![Contributors](https://img.shields.io/badge/contributors-You-green.svg)](#contributors)
-[![Issues](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](./issues)
+[![Contributors](https://img.shields.io/badge/contributors-You-green.svg)](#maintainers--contributors)
+[![Issues](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](../../issues)
 
 ![Architecture & Workflow](./assets/hero.png)
 
@@ -98,7 +98,8 @@ Labs are reproducible environments built with Terraform, Docker, Kubernetes, and
 ## Repository Structure
 
 ```text
-.
+re-engineering-the-software-engineering
+│
 ├── chapters/
 │   ├── 01-introduction.md
 │   ├── 02-diagnostics-and-metrics.md
@@ -160,4 +161,4 @@ See [`ROADMAP.md`](https://www.google.com/search?q=./ROADMAP.md) for details on 
 * **Issues:** Report bugs or request features on [GitHub Issues](https://www.google.com/search?q=../../issues).
 * **Discussions:** Ask questions and share feedback on [GitHub Discussions](https://www.google.com/search?q=../../discussions).
 
-
+---
