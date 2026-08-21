@@ -1,0 +1,94 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Job 1: Validate Repository Structure & Initialization Script
+  # ---------------------------------------------------------------------------
+  validate-structure:
+    name: Validate Structure & Init Script
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Make init.sh executable
+        run: chmod +x init.sh
+
+      - name: Test Execute init.sh
+        run: ./init.sh
+
+      - name: Verify Chapters Directory
+        run: |
+          for i in $(seq -w 1 15); do
+            file=$(ls chapters/${i}-*.md 2>/dev/null || true)
+            if [ -z "$file" ]; then
+              echo "❌ Missing chapter file for chapter $i"
+              exit 1
+            else
+              echo "✅ Found: $file"
+            fi
+          done
+
+  # ---------------------------------------------------------------------------
+  # Job 2: Lint Documentation & Check Internal Links
+  # ---------------------------------------------------------------------------
+  lint-docs:
+    name: Lint Markdown & Check Links
+    runs-on: ubuntu-latest
+    needs: validate-structure
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Markdown Lint
+        uses: nosornio/markdownlint-cli2-action@v1
+        with:
+          globs: |
+            README.md
+            CONTRIBUTING.md
+            chapters/*.md
+            templates/*.md
+
+      - name: Check Broken Links
+        uses: garthk/lychee-action@v1
+        with:
+          args: --verbose --no-progress './**.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ---------------------------------------------------------------------------
+  # Job 3: Validate YAML Templates
+  # ---------------------------------------------------------------------------
+  validate-templates:
+    name: Validate YAML Configs
+    runs-on: ubuntu-latest
+    needs: validate-structure
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Yamllint
+        run: pip install yamllint
+
+      - name: Lint YAML Files
+        run: |
+          yamllint -d "{extends: relaxed, rules: {line-length: disable}}" templates/
