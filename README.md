@@ -2,10 +2,10 @@
 
 Re-engineering the Software Engineering — a practical, research-driven playbook for modernizing how teams design, deliver, and operate software: automation, observability, platform thinking, and human-centered practices.
 
-[![CI](https://img.shields.io/badge/ci-pipeline-lightgrey.svg)](../../actions)
+[![CI](https://img.shields.io/badge/ci-pipeline-lightgrey.svg)](https://github.com/bundlab/re-engineering-the-software-engineering/actions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Contributors](https://img.shields.io/badge/contributors-You-green.svg)](#maintainers--contributors)
-[![Issues](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](../../issues)
+[![Issues](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](https://github.com/bundlab/re-engineering-the-software-engineering/issues)
 
 ![Architecture & Workflow](./assets/hero.png)
 
