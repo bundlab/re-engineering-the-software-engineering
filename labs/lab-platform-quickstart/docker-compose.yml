@@ -1,0 +1,9 @@
+services:
+  platform-cli:
+    build:
+      context: .
+      dockerfile: templates/fastapi-service/Dockerfile
+    volumes:
+      - .:/lab
+    working_dir: /lab
+    command: python3 scaffold.py payment-service checkout-team
