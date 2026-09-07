@@ -53,21 +53,21 @@ This repository collects pragmatic guidance, design patterns, migration recipes,
 
 | # | Chapter File | Description |
 | --- | --- | --- |
-| **01** | [`01-introduction.md`](https://www.google.com/search?q=./chapters/01-introduction.md) | Orientation, scope, audience, guiding principles, and methodology. |
-| **02** | [`02-diagnostics-and-metrics.md`](https://www.google.com/search?q=./chapters/02-diagnostics-and-metrics.md) | Measurement strategy, DORA metrics, SLO design, and error budgets. |
-| **03** | [`03-automation-first-ci-cd.md`](https://www.google.com/search?q=./chapters/03-automation-first-ci-cd.md) | Pipeline patterns, pipeline-as-code, feature flags, and deployment strategies. |
-| **04** | [`04-infra-as-code.md`](https://www.google.com/search?q=./chapters/04-infra-as-code.md) | IaC design, state management, drift detection, and automated enforcement. |
-| **05** | [`05-observability-and-verification.md`](https://www.google.com/search?q=./chapters/05-observability-and-verification.md) | Logs, metrics, traces, context propagation, and continuous verification. |
-| **06** | [`06-platform-engineering.md`](https://www.google.com/search?q=./chapters/06-platform-engineering.md) | Internal developer platforms (IDP), self-service portals, and Platform-as-a-Product. |
-| **07** | [`07-quality-and-testing.md`](https://www.google.com/search?q=./chapters/07-quality-and-testing.md) | Shift-left testing, contract testing, mutation testing, and test data management. |
-| **08** | [`08-security-in-the-pipeline.md`](https://www.google.com/search?q=./chapters/08-security-in-the-pipeline.md) | DevSecOps, SAST/DAST, SBOMs, supply-chain security, and Policy-as-Code. |
-| **09** | [`09-resilience-and-chaos.md`](https://www.google.com/search?q=./chapters/09-resilience-and-chaos.md) | Fault tolerance, chaos engineering, game days, and progressive delivery. |
-| **10** | [`10-operations-and-oncall.md`](https://www.google.com/search?q=./chapters/10-operations-and-oncall.md) | SRE practices, incident management, on-call hygiene, and automated runbooks. |
-| **11** | [`11-developer-experience.md`](https://www.google.com/search?q=./chapters/11-developer-experience.md) | DevEx metrics, local environments, cognitive load reduction, and inner loop. |
-| **12** | [`12-migration-and-adoption-guides.md`](https://www.google.com/search?q=./chapters/12-migration-and-adoption-guides.md) | Legacy modernization, Strangler Fig pattern, and organizational change management. |
-| **13** | [`13-measurement-and-feedback.md`](https://www.google.com/search?q=./chapters/13-measurement-and-feedback.md) | Feedback loops, data-driven postmortems, sentiment tracking, and learning loops. |
-| **14** | [`14-governance-and-policy.md`](https://www.google.com/search?q=./chapters/14-governance-and-policy.md) | Multi-tenant governance, FinOps, cloud cost management, and regulatory compliance. |
-| **15** | [`15-case-studies-and-experiments.md`](https://www.google.com/search?q=./chapters/15-case-studies-and-experiments.md) | Production case studies, benchmark metrics, reproducible experiments, and results. |
+| **01** | [`01-introduction.md`](chapters/01-introduction.md) | Orientation, scope, audience, guiding principles, and methodology. |
+| **02** | [`02-diagnostics-and-metrics.md`](chapters/02-diagnostics-and-metrics.md) | Measurement strategy, DORA metrics, SLO design, and error budgets. |
+| **03** | [`03-automation-first-ci-cd.md`](chapters/03-automation-first-ci-cd.md) | Pipeline patterns, pipeline-as-code, feature flags, and deployment strategies. |
+| **04** | [`04-infra-as-code.md`](chapters/04-infra-as-code.md) | IaC design, state management, drift detection, and automated enforcement. |
+| **05** | [`05-observability-and-verification.md`](chapters/05-observability-and-verification.md) | Logs, metrics, traces, context propagation, and continuous verification. |
+| **06** | [`06-platform-engineering.md`](chapters/06-platform-engineering.md) | Internal developer platforms (IDP), self-service portals, and Platform-as-a-Product. |
+| **07** | [`07-quality-and-testing.md`](chapters/07-quality-and-testing.md) | Shift-left testing, contract testing, mutation testing, and test data management. |
+| **08** | [`08-security-in-the-pipeline.md`](chapters/08-security-in-the-pipeline.md) | DevSecOps, SAST/DAST, SBOMs, supply-chain security, and Policy-as-Code. |
+| **09** | [`09-resilience-and-chaos.md`](chapters/09-resilience-and-chaos.md) | Fault tolerance, chaos engineering, game days, and progressive delivery. |
+| **10** | [`10-operations-and-oncall.md`](chapters/10-conclusion-and-the-engineering-operating-model.md) | SRE practices, incident management, on-call hygiene, and automated runbooks. |
+| **11** | [`11-developer-experience.md`](chapters/11-finops-and-cloud-cost-engineering.md) | DevEx metrics, local environments, cognitive load reduction, and inner loop. |
+| **12** | [`12-migration-and-adoption-guides.md`](chapters/12-migration-and-adoption-guides.md) | Legacy modernization, Strangler Fig pattern, and organizational change management. |
+| **13** | [`13-measurement-and-feedback.md`](chapters/13-measurement-and-feedback.md) | Feedback loops, data-driven postmortems, sentiment tracking, and learning loops. |
+| **14** | [`14-governance-and-policy.md`](chapters/14-governance-and-policy.md) | Multi-tenant governance, FinOps, cloud cost management, and regulatory compliance. |
+| **15** | [`15-case-studies-and-experiments.md`](chapters/15-case-studies-and-experiments.md) | Production case studies, benchmark metrics, reproducible experiments, and results. |
 
 ---
 
