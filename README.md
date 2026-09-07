@@ -62,8 +62,8 @@ This repository collects pragmatic guidance, design patterns, migration recipes,
 | **07** | [`07-quality-and-testing.md`](chapters/07-quality-and-testing.md) | Shift-left testing, contract testing, mutation testing, and test data management. |
 | **08** | [`08-security-in-the-pipeline.md`](chapters/08-security-in-the-pipeline.md) | DevSecOps, SAST/DAST, SBOMs, supply-chain security, and Policy-as-Code. |
 | **09** | [`09-resilience-and-chaos.md`](chapters/09-resilience-and-chaos.md) | Fault tolerance, chaos engineering, game days, and progressive delivery. |
-| **10** | [`10-operations-and-oncall.md`](chapters/10-conclusion-and-the-engineering-operating-model.md) | SRE practices, incident management, on-call hygiene, and automated runbooks. |
-| **11** | [`11-developer-experience.md`](chapters/11-finops-and-cloud-cost-engineering.md) | DevEx metrics, local environments, cognitive load reduction, and inner loop. |
+| **10** | [`10-operations-and-oncall.md`](chapters/10-operations-and-oncall.md) | SRE practices, incident management, on-call hygiene, and automated runbooks. |
+| **11** | [`11-developer-experience.md`](chapters/11-developer-experience.md) | DevEx metrics, local environments, cognitive load reduction, and inner loop. |
 | **12** | [`12-migration-and-adoption-guides.md`](chapters/12-migration-and-adoption-guides.md) | Legacy modernization, Strangler Fig pattern, and organizational change management. |
 | **13** | [`13-measurement-and-feedback.md`](chapters/13-measurement-and-feedback.md) | Feedback loops, data-driven postmortems, sentiment tracking, and learning loops. |
 | **14** | [`14-governance-and-policy.md`](chapters/14-governance-and-policy.md) | Multi-tenant governance, FinOps, cloud cost management, and regulatory compliance. |
