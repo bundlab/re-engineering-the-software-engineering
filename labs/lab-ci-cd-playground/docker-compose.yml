@@ -1,0 +1,9 @@
+services:
+  test-runner:
+    build: ./app
+    command: pytest test_main.py -v
+
+  app:
+    build: ./app
+    ports:
+      - "8006:8000"
