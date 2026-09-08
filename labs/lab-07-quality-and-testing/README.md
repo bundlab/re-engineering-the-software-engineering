@@ -1,9 +1,11 @@
-# Lab 07: lab-07-quality-and-testing
+# Lab 07: Quality Gates and Automated Testing
 
-## Overview
-Practical hands-on exercises and automated verification suites corresponding to Chapter 07.
+## Objective
+Implement automated unit and integration tests using Pytest, enforce code coverage thresholds (>80%), and configure isolated test execution via Docker.
 
 ## Quickstart
+
+### 1. Run Tests Locally
 ```bash
-# Lab setup commands will be populated here
-```
+pip install -r requirements.txt
+pytest --cov=app --cov-report=term-missing

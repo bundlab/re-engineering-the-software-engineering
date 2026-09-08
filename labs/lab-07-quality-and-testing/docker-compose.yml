@@ -1,0 +1,6 @@
+services:
+  test-runner:
+    build: .
+    ports:
+      - "8008:8000"
+    command: pytest --cov=app --cov-report=term-missing
