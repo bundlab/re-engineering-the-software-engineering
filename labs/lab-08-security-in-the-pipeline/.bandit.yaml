@@ -1,0 +1,6 @@
+# Bandit Security Linter Configuration
+assert_used:
+  skips: ['*_test.py', 'test_*.py']
+
+# Target specific severe vulnerability categories
+tests: ['B102', 'B307', 'B602', 'B608']

@@ -1,0 +1,4 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+bandit>=1.7.5
+pip-audit>=2.6.0

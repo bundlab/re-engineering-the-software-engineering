@@ -1,9 +1,10 @@
-# Lab 08: lab-08-security-in-the-pipeline
+# Lab 08: Security in the Pipeline (DevSecOps)
 
-## Overview
-Practical hands-on exercises and automated verification suites corresponding to Chapter 08.
+## Objective
+Implement static code analysis (SAST) and dependency vulnerability scanning to catch security flaws (SQL Injection, Command Execution, vulnerable packages) before deployment.
 
-## Quickstart
+## Execution
+
+### Run Scans via Docker Container
 ```bash
-# Lab setup commands will be populated here
-```
+docker compose up --build

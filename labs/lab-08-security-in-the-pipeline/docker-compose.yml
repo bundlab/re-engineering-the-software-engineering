@@ -1,0 +1,6 @@
+services:
+  security-scanner:
+    build: .
+    volumes:
+      - .:/app
+    command: ./scripts/run_security_scans.sh
