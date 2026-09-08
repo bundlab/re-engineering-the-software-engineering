@@ -1,9 +1,14 @@
-# Lab 04: lab-04-infrastructure-as-code
+# Lab 04: Infrastructure as Code (IaC) & Local Cloud Emulation
 
-## Overview
-Practical hands-on exercises and automated verification suites corresponding to Chapter 04.
+## Objective
+Learn declarative infrastructure management by provisioning an S3 bucket and IAM execution role using Terraform or OpenTofu against a local AWS emulator (LocalStack).
 
-## Quickstart
+## Prerequisites
+* Docker & Docker Compose
+* OpenTofu or Terraform CLI installed (`tofu` or `terraform`)
+
+## Instructions
+
+### 1. Start Local Cloud Infrastructure
 ```bash
-# Lab setup commands will be populated here
-```
+docker compose up -d
